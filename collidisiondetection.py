@@ -32,7 +32,8 @@ playerImg = pygame.image.load(r'C:\\Users\\Don\\Pictures\\deadlycry2.png').conve
 player= windowSurface.blit(playerImg,(100,100))
 foods =[]
 for i in range(20):
-    foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0, WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
+    foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0, 
+    WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
     
 moveLeft = False
 moveRight = False
@@ -80,7 +81,8 @@ while True:
         foodCounter += 1
         if foodCounter >=NEWFOOD:
             foodCounter = 0
-            foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH- FOODSIZE), random.randint(0, WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
+            foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH- FOODSIZE), random.randint(0,
+            WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
         windowSurface.fill(BLACK)
         
         if moveDown and player.bottom < WINDOWHEIGHT:
